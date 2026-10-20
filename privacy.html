@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="個人用OAuthアプリ rclone-kancolle のGoogle Driveデータ利用に関するプライバシーポリシー。">
+  <title>プライバシーポリシー | rclone-kancolle</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <header class="hero compact">
+      <p class="eyebrow">PRIVACY POLICY</p>
+      <h1>プライバシーポリシー</h1>
+      <p class="lead">rclone-kancolle — 個人用 Google Drive 同期</p>
+      <p class="muted">適用開始日：2026年10月20日 / Effective: October 20, 2026</p>
+      <p><a href="index.html">← ホームページへ戻る</a></p>
+    </header>
+
+    <section aria-labelledby="operator">
+      <h2 id="operator">1. 運用者と目的</h2>
+      <p>「rclone-kancolle」は所有者本人がGoogle DriveとローカルPCのファイルを同期するために利用する個人用OAuthアプリです。一般向けのオンラインサービスではありません。OAuthの許可は、PC上で動作するrcloneがGoogle Drive APIにアクセスするために使われます。</p>
+    </section>
+
+    <section aria-labelledby="information">
+      <h2 id="information">2. アクセスする情報と権限</h2>
+      <p>アプリはGoogle Drive OAuthスコープ <code>https://www.googleapis.com/auth/drive</code> を使用し、認可されたGoogle Drive内のファイルおよびメタデータへ広くアクセスできる権限を要求します。同期するファイルの内容、名前、ID、更新日時など、操作に必要な情報をrcloneが処理する場合があります。</p>
+      <p>通常の実作業は、所有者が指定した同期先・対象ファイルに対して行われます。OAuth権限の範囲そのものは、その指定範囲より広いことに注意してください。</p>
+    </section>
+
+    <section aria-labelledby="use">
+      <h2 id="use">3. 利用方法</h2>
+      <p>取得した情報は、所有者が設定・実行したファイルの一覧取得、読込み、コピー、同期、アップロード、更新、照合に利用します。rcloneで指定された処理によっては、移動や削除にも利用され得ます。広告、プロファイリング、第三者向けの分析には利用しません。</p>
+    </section>
+
+    <section aria-labelledby="storage">
+      <h2 id="storage">4. 保存と保護</h2>
+      <p>OAuthトークン等の接続設定は所有者のPC内にあるrcloneの設定ファイルに保存されます。同期対象のファイルは、所有者が設定したローカル保存先およびGoogle Drive内に保存されます。操作履歴やエラーログがローカルに残る場合があります。</p>
+      <p>このGitHub Pagesサイトにトークン、Google Driveの内容、同期対象ファイルをアップロード・公開することはありません。サイト自体にはユーザー用のログインフォーム、アクセス解析タグ、広告タグ、ファイルアップロード機能を設置していません。</p>
+    </section>
+
+    <section aria-labelledby="sharing">
+      <h2 id="sharing">5. 外部への送信・共有</h2>
+      <p>ファイル転送は、指定されたローカルPCと所有者のGoogle Driveとの間でGoogle Drive APIを通じて行われます。本アプリが収集したGoogle Driveの内容を広告会社、データ仲介業者などに販売・提供することはありません。所有者が別途設定・許可したサービスのデータ処理は、それぞれのサービスの設定に従います。</p>
+      <p>本ウェブページの配信にはGitHub Pagesを利用しています。ページへの通常のアクセスに伴う技術情報はGitHubのサービス規約・プライバシー方針に従って扱われる場合がありますが、ウェブサイト訪問だけでGoogle Drive内のデータを取得することはありません。</p>
+    </section>
+
+    <section aria-labelledby="retention">
+      <h2 id="retention">6. 保持期間・削除・アクセスの取り消し</h2>
+      <p>ローカルファイル・Drive上のファイルは、所有者が削除または同期設定を変更するまで、それぞれの保存先に残ります。OAuth認可はGoogleアカウントのサードパーティーアクセス管理画面から取り消せます。取り消すと以後の認証済み同期ができなくなりますが、保存済みファイルが自動的に削除されるわけではありません。</p>
+      <p>ローカルの接続設定・ログを消去する場合は、所有者自身がバックアップや他の同期処理への影響を確認してから実施します。</p>
+    </section>
+
+    <section aria-labelledby="inquiries">
+      <h2 id="inquiries">7. お問い合わせ・更新</h2>
+      <p>アプリに関する連絡先はGoogle OAuth同意画面に記載のユーザーサポートメールです。本方針に変更があった場合は、この公開ページを更新します。</p>
+    </section>
+
+    <section class="english" lang="en" aria-labelledby="summary">
+      <h2 id="summary">English summary</h2>
+      <p>rclone-kancolle is a personal OAuth configuration for synchronizing local files with the owner's Google Drive using rclone. It requests the full Google Drive scope, so the granted permission is broader than the file paths actually configured for synchronization. File data and metadata are used for owner-directed file operations, including listing, reading, uploading, updating, copying and potentially moving or deleting files depending on the rclone command.</p>
+      <p>OAuth credentials are stored in the owner's local rclone configuration. Files remain on the configured local machine and/or in the owner's Google Drive; local operational logs may be retained. The public GitHub Pages site does not collect Google Drive data or OAuth tokens and contains no analytics or advertising trackers. Data is not sold or provided to data brokers. The owner can revoke access via Google Account settings. Revocation does not automatically remove previously stored files. Inquiries may be directed to the support email displayed in the OAuth consent screen.</p>
+    </section>
+
+    <footer>
+      <p><a href="index.html">Home</a> · <a href="https://github.com/kantemu/kantemu.github.io" rel="noopener noreferrer">Source repository</a></p>
+    </footer>
+  </main>
+</body>
+</html>
