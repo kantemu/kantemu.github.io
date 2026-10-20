@@ -1,0 +1,23 @@
+:root { color-scheme: light dark; font-family: -apple-system, BlinkMacSystemFont, "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif; line-height: 1.8; }
+* { box-sizing: border-box; }
+body { margin: 0; color: #202734; background: #f5f7f9; }
+.container { width: min(100% - 2.5rem, 830px); margin: 3rem auto; padding: 2.5rem; background: white; border: 1px solid #e3e8ed; border-radius: 14px; }
+h1, h2 { line-height: 1.35; letter-spacing: -.025em; }
+h1 { font-size: clamp(2rem, 5vw, 2.8rem); margin: .35rem 0 .65rem; }
+h2 { font-size: 1.23rem; margin: 0 0 .9rem; }
+p { margin: .65rem 0; }
+a { color: #22539e; text-underline-offset: 3px; }
+a:focus-visible { outline: 2px solid #22539e; outline-offset: 3px; }
+.hero { padding-bottom: 2rem; border-bottom: 1px solid #dce2e8; }
+.hero.compact { padding-bottom: 1.4rem; }
+.lead { font-size: 1.14rem; font-weight: 600; }
+.eyebrow { color: #577089; text-transform: uppercase; letter-spacing: .14em; font-size: .78rem; font-weight: 700; }
+.muted { color: #566274; }
+section { padding: 1.9rem 0; border-bottom: 1px solid #e8ebef; }
+.link-card { display: inline-block; padding: .65rem 1rem; border: 1px solid #ccd9eb; border-radius: 7px; font-weight: 600; }
+code { padding: .15rem .35rem; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; background: #eef1f6; border-radius: 4px; overflow-wrap: anywhere; }
+.english { background: #f6f8fa; padding: 1.5rem; margin-top: 1.7rem; border-radius: 10px; }
+footer { padding-top: 1.7rem; color: #5a6776; font-size: .88rem; }
+@media (max-width: 640px) { .container { width: 100%; margin: 0; border: 0; border-radius: 0; padding: 1.25rem; } section { padding: 1.5rem 0; } }
+@media (prefers-color-scheme: dark) { body { color: #e5eaf0; background: #14191f; } .container { background: #1e252e; border-color: #3a424e; } a { color: #98c1ff; } a:focus-visible { outline-color: #98c1ff; } .muted, footer { color: #b0bccc; } .eyebrow { color: #b6cde0; } .hero, section { border-color: #3b4654; } .link-card { border-color: #576578; } code, .english { background: #29333e; } }
+@media print { body { background: white; color: black; } .container { border: 0; margin: 0; padding: 0; width: 100%; } }
