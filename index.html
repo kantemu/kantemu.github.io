@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="rclone-kancolle は所有者本人による Google Drive とローカルPC間のファイル同期に使用する個人用OAuthアプリです。">
+  <title>rclone-kancolle | 個人用 Google Drive 同期</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <p class="eyebrow">PERSONAL-USE OAUTH APP</p>
+      <h1>rclone-kancolle</h1>
+      <p class="lead">Google Drive とローカルPC間の、個人用ファイル同期のためのOAuthアプリです。</p>
+      <p class="muted">A personal OAuth app used for file synchronization between a local computer and the owner's Google Drive.</p>
+    </header>
+
+    <section aria-labelledby="purpose">
+      <h2 id="purpose">このアプリについて</h2>
+      <p>このOAuthアプリは、所有者本人が <a href="https://rclone.org/" rel="noopener noreferrer">rclone</a> を使い、指定したローカルファイルとGoogle Drive上のファイルを同期するために設定したものです。一般向けのサービスではなく、利用者登録や公開アカウント機能はありません。</p>
+      <p>Google Driveへのアクセスは所有者の同意に基づき、rcloneが所有者のPC上で実行します。このウェブサイトはアプリの説明を掲載する静的ページであり、Googleへのログイン画面やファイル転送サーバーではありません。</p>
+    </section>
+
+    <section aria-labelledby="access">
+      <h2 id="access">Google Driveへのアクセス</h2>
+      <p>OAuthのアクセス権限にはGoogle Driveのファイルへの広いアクセス範囲（<code>https://www.googleapis.com/auth/drive</code>）が含まれます。実際の転送対象は所有者がrclone側で指定したパスと処理に従います。</p>
+      <p>ファイルの一覧取得、読み取り、アップロード、更新など、設定した同期に必要な操作を行います。実行するrcloneコマンドによっては、対象ファイルの削除や移動も可能です。</p>
+    </section>
+
+    <section aria-labelledby="privacy">
+      <h2 id="privacy">プライバシー</h2>
+      <p>Google Driveの内容、OAuthトークン、個人用ファイルをこのGitHub Pagesサイトに掲載したり、サイト経由で受信したりしません。ユーザーデータの利用方法、保存、取り消し方法はプライバシーポリシーに記載しています。</p>
+      <p><a class="link-card" href="privacy.html">プライバシーポリシーを見る <span aria-hidden="true">→</span></a></p>
+    </section>
+
+    <footer>
+      <p>個人利用のための説明ページ / Informational site for a personally operated OAuth app.</p>
+      <p><a href="privacy.html">Privacy Policy</a> · <a href="https://github.com/kantemu/kantemu.github.io" rel="noopener noreferrer">Source repository</a></p>
+    </footer>
+  </main>
+</body>
+</html>
